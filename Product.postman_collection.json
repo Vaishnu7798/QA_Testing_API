@@ -1,0 +1,565 @@
+{
+	"info": {
+		"_postman_id": "0c6f760f-d55f-4cca-98b2-bc8617690a70",
+		"name": "Product",
+		"description": "## **Products API - Description**\n\nThe **Products API** handles product management including **adding, updating, retrieving, and deleting products** in the inventory.\n\n**Available Endpoints:**\n\n✔️ `GET /products` → Fetch all products\n\n✔️ `GET /products/:id` → Get product details\n\n✔️ `POST /products` → Create a new product\n\n✔️ `PUT /products/:id` → Update product details\n\n✔️ `DELETE /products/:id` → Remove a product\n\n**Validation Rules:**  \n✅ **Name:** Required, max 255 characters  \n✅ **Description:** Required  \n✅ **Price:** Required, non-negative number\n\n**Common Errors & Status Codes:**\n\n- `400 Bad Request` → Invalid input\n    \n- `404 Not Found` → Product not found",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28983309",
+		"_collection_link": "https://www.postman.com/interstellar-resonance-237367/qa-testing-api/collection/625ummw/product?action=share&source=collection_link&creator=28983309"
+	},
+	"item": [
+		{
+			"name": "https://qa-testing-eight.vercel.app/products/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/2",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products/222",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/222",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products/abc123",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/abc123",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"abc123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/1",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products/23",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/23",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"name\": \"Laptop\",\r\n    \"price\": 50000,\r\n    \"category\": \"Electronics\"\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"name\": \"Mobile Phone\",\r\n    \"price\": 30000,\r\n    \"category\": \"Electronics\"\r\n  }\r\n]\r\n\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n  \"description\": \"High-performance gaming laptop\",\r\n  \"price\": 1200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"price\": 1200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"message\": \"Unauthorized access\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"price\": \"12000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"Gaming Laptop\",\r\n  \"price\": -100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Laptop\",\r\n  \"description\": \"High-performance gaming laptop with better specs\",\r\n  \"price\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/5",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/abc123",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"abc123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"Gaming Laptop\",\r\n  \"price\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/5",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/abc123",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"abc123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"High-performance gaming laptop with better specs\",\r\n  \"price\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/5",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"Gaming Laptop\",\r\n  \"price\": -100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/5",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 5,\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"Gaming Laptop\",\r\n  \"price\": 1500\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/5",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/abc123",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"abc123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/products/11",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"products",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

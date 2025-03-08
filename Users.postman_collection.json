@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "c7b059eb-a7c1-47a2-a59c-54639060b660",
+		"name": "Users",
+		"description": "### **Users API - Description**\n\nThe **Users API** manages user-related operations such as **creating, updating, retrieving, and deleting users** in the system.\n\n**Available Endpoints:**  \n✔️ `GET /users` → Fetch all users  \n✔️ `GET /users/:id` → Get a specific user  \n✔️ `POST /users` → Create a new user  \n✔️ `PUT /users/:id` → Update user details  \n✔️ `DELETE /users/:id` → Delete a user\n\n**Validation Rules:**  \n✅ **Name:** Required, max 255 characters  \n✅ **Email:** Unique, valid format, required  \n✅ **Age:** Integer between 0 - 100\n\n**Common Errors & Status Codes:**\n\n- `400 Bad Request` → Invalid input\n    \n- `404 Not Found` → User does not exist\n    \n- `409 Conflict` → Email already exists",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28983309",
+		"_collection_link": "https://www.postman.com/interstellar-resonance-237367/qa-testing-api/collection/yblmc59/users?action=share&source=collection_link&creator=28983309"
+	},
+	"item": [
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 6,\r\n  \"name\": \"Test User\",\r\n  \"email\": \"test@example.com\",\r\n  \"age\": 23\r\n}\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/5",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/99",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test User\",\r\n  \"email\": \"testuser@example.com\",\r\n  \"age\": 23\r\n}\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/99",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test User\",\r\n  \"email\": \"testuser@example.com\",\r\n  \"age\": 23\r\n}\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/6",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test User\",\r\n  \"email\": \"testuser@example.com\",\r\n  \"age\": -5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test User\",\r\n  \"email\": \"testuser@example.com\",\r\n  \"age\": 23\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Vaishnavi\",\r\n  \"email\": \"existing_user@example.com\",  \r\n  \"age\": 25\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/6",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Vaishnavi\",\r\n  \"email\": \"existing_user@example.com\",\r\n  \"age\": 25\r\n}\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/6",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Vaishnavi\",\r\n  \"email\": \"existing_user@example.com\",\r\n  \"age\": 24\r\n}\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/6",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Vaishnavi\",\r\n  \"email\": \"existing_user@example.com\",\r\n  \"age\": 24\r\n}\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Vaishnavi\",\r\n  \"email\": \"existing_user@example.com\",\r\n  \"age\": 24\r\n}\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/6",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"\",\r\n  \"email\": \"\",\r\n  \"age\": \"\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/6",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Vaishnavi\",\r\n  \"email\": \"updated_vaishnavi@example.com\",\r\n  \"age\": 25\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/6",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Vaishnavi\",\r\n  \"email\": \"updated_vaishnavi@example.com\",\r\n  \"age\": 25\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://qa-testing-eight.vercel.app/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Vaishnavi\",\r\n  \"email\": \"vaishnavi@example.com\",\r\n  \"age\": 24\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qa-testing-eight.vercel.app/users/1",
+					"protocol": "https",
+					"host": [
+						"qa-testing-eight",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
